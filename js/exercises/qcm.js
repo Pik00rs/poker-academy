@@ -16,9 +16,6 @@ export function buildQcmQuestion(qDef) {
 function pickLang(obj, baseKey) {
   const lang = getLang();
   if (lang === "en" && obj[baseKey + "En"]) return obj[baseKey + "En"];
-function pickLang(obj, baseKey) {
-  const lang = getLang();
-  if (lang === "en" && obj[baseKey + "En"]) return obj[baseKey + "En"];
   if (lang === "th" && obj[baseKey + "Th"]) return obj[baseKey + "Th"];
   if (lang === "zh") return obj[baseKey + "Zh"] || obj[baseKey + "En"] || obj[baseKey];
   return obj[baseKey];
