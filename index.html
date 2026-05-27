@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Poker Academy</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,700;9..144,900&family=JetBrains+Mono:wght@400;500;700&family=Inter+Tight:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/base.css" />
+  <link rel="stylesheet" href="css/layout.css" />
+  <link rel="stylesheet" href="css/components.css" />
+  <link rel="stylesheet" href="css/lessons.css" />
+</head>
+<body>
+  <div class="bg-grain"></div>
+  <div class="bg-glow"></div>
+
+  <header class="topbar">
+    <div class="brand">
+      <span class="brand-mark">♠</span>
+      <span class="brand-name" data-i18n="brand">Poker Academy</span>
+    </div>
+    <nav class="topnav">
+      <a href="#/home" data-route="home" data-i18n="nav.home">Accueil</a>
+      <a href="#/lessons" data-route="lessons" data-i18n="nav.lessons">Leçons</a>
+      <a href="#/progress" data-route="progress" data-i18n="nav.progress">Progression</a>
+    </nav>
+    <div class="lang-switch" id="langSwitch">
+      <button data-lang="fr" class="active">FR</button>
+      <button data-lang="en">EN</button>
+      <button data-lang="th">TH</button>
+    </div>
+  </header>
+
+  <main id="app" class="app-shell"></main>
+
+  <footer class="footer">
+    <span data-i18n="footer.note">Apprends. Joue. Progresse.</span>
+  </footer>
+
+  <script type="module" src="js/main.js"></script>
+</body>
+</html>
