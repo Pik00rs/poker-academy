@@ -163,6 +163,17 @@ function explainHand(cards, ev, lang) {
       [HAND.FOUR_KIND]: `สี่ใบเลขเดียวกัน = โฟร์การ์ด`,
       [HAND.STRAIGHT_FLUSH]: `ห้าใบเรียงและสีเดียวกัน = สเตรทฟลัช`,
     },
+    zh: {
+      [HAND.HIGH_CARD]: `没有对子也没有连续：这是高牌，只看最大的一张。`,
+      [HAND.PAIR]: `两张同点数的牌构成一个对子。`,
+      [HAND.TWO_PAIR]: `两个不同的对子。`,
+      [HAND.THREE_KIND]: `三张同点数 = 三条。`,
+      [HAND.STRAIGHT]: `五张连续的牌，但不全是同花色 = 顺子。`,
+      [HAND.FLUSH]: `五张同花色但不连续的牌 = 同花。`,
+      [HAND.FULL_HOUSE]: `一个三条 + 一个对子 = 葫芦。`,
+      [HAND.FOUR_KIND]: `四张同点数 = 四条。`,
+      [HAND.STRAIGHT_FLUSH]: `五张连续且同花色的牌 = 同花顺。`,
+    },
   };
   return `${name} — ${explainByCat[lang]?.[ev.category] || explainByCat.fr[ev.category]}`;
 }

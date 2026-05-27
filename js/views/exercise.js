@@ -1,5 +1,5 @@
 import { el } from "../dom.js";
-import { t } from "../i18n/index.js";
+import { t, getLang } from "../i18n/index.js";
 import { LESSONS } from "../data/lessons.js";
 import { sampleQuestions } from "../data/banks/index.js";
 import { recordAttempt } from "../storage.js";
@@ -242,10 +242,11 @@ function roundScore(s) {
 
 function questionTitle(q) {
   if (q.type === "qcm") {
-    const lang = (typeof window !== 'undefined' && window.__lang) || 'fr';
+    const lang = getLang();
     const qDef = q.qDef;
     if (lang === 'en' && qDef.qEn) return qDef.qEn;
     if (lang === 'th' && qDef.qTh) return qDef.qTh;
+    if (lang === 'zh') return qDef.qZh || qDef.qEn || qDef.q;
     return qDef.q;
   }
   if (q.type === "hand-naming") return t("l6.ex.prompt");

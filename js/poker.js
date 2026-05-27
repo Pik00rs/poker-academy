@@ -72,15 +72,15 @@ export const HAND_NAME_KEYS = {
 
 // Plain short names (locale-neutral keys we map separately)
 export const HAND_SHORT = {
-  [HAND.HIGH_CARD]: { fr: "Hauteur", en: "High Card", th: "ไพ่สูง" },
-  [HAND.PAIR]: { fr: "Paire", en: "Pair", th: "คู่" },
-  [HAND.TWO_PAIR]: { fr: "Deux paires", en: "Two Pair", th: "สองคู่" },
-  [HAND.THREE_KIND]: { fr: "Brelan", en: "Three of a Kind", th: "ทริปเปิ้ล" },
-  [HAND.STRAIGHT]: { fr: "Quinte", en: "Straight", th: "สเตรท" },
-  [HAND.FLUSH]: { fr: "Couleur", en: "Flush", th: "ฟลัช" },
-  [HAND.FULL_HOUSE]: { fr: "Full", en: "Full House", th: "ฟูลเฮ้าส์" },
-  [HAND.FOUR_KIND]: { fr: "Carré", en: "Four of a Kind", th: "โฟร์การ์ด" },
-  [HAND.STRAIGHT_FLUSH]: { fr: "Quinte flush", en: "Straight Flush", th: "สเตรทฟลัช" },
+  [HAND.HIGH_CARD]: { fr: "Hauteur", en: "High Card", th: "ไพ่สูง", zh: "高牌" },
+  [HAND.PAIR]: { fr: "Paire", en: "Pair", th: "คู่", zh: "对子" },
+  [HAND.TWO_PAIR]: { fr: "Deux paires", en: "Two Pair", th: "สองคู่", zh: "两对" },
+  [HAND.THREE_KIND]: { fr: "Brelan", en: "Three of a Kind", th: "ทริปเปิ้ล", zh: "三条" },
+  [HAND.STRAIGHT]: { fr: "Quinte", en: "Straight", th: "สเตรท", zh: "顺子" },
+  [HAND.FLUSH]: { fr: "Couleur", en: "Flush", th: "ฟลัช", zh: "同花" },
+  [HAND.FULL_HOUSE]: { fr: "Full", en: "Full House", th: "ฟูลเฮ้าส์", zh: "葫芦" },
+  [HAND.FOUR_KIND]: { fr: "Carré", en: "Four of a Kind", th: "โฟร์การ์ด", zh: "四条" },
+  [HAND.STRAIGHT_FLUSH]: { fr: "Quinte flush", en: "Straight Flush", th: "สเตรทฟลัช", zh: "同花顺" },
 };
 
 // Evaluate exactly 5 cards. Returns { category, ranks: tieBreakers desc }

@@ -16,7 +16,11 @@ export function buildQcmQuestion(qDef) {
 function pickLang(obj, baseKey) {
   const lang = getLang();
   if (lang === "en" && obj[baseKey + "En"]) return obj[baseKey + "En"];
+function pickLang(obj, baseKey) {
+  const lang = getLang();
+  if (lang === "en" && obj[baseKey + "En"]) return obj[baseKey + "En"];
   if (lang === "th" && obj[baseKey + "Th"]) return obj[baseKey + "Th"];
+  if (lang === "zh") return obj[baseKey + "Zh"] || obj[baseKey + "En"] || obj[baseKey];
   return obj[baseKey];
 }
 
@@ -24,6 +28,7 @@ function pickOptionLabel(opt) {
   const lang = getLang();
   if (lang === "en" && opt.textEn) return opt.textEn;
   if (lang === "th" && opt.textTh) return opt.textTh;
+  if (lang === "zh") return opt.textZh || opt.textEn || opt.text;
   return opt.text;
 }
 

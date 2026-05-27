@@ -180,6 +180,12 @@ export const en = {
   "l6.ex.prompt": "What's your hand?",
   "l7.ex.prompt": "Rank these hands from strongest to weakest.",
   "l10.ex.prompt": "Pot: {pot}. Place your bet.",
+  "l7.ex.pot": "Pot",
+  "l7.ex.yourBet": "Your bet",
+  "l7.ex.target": "Target",
+  "l7.ex.feedback.good": "Well played, ideal size.",
+  "l7.ex.feedback.close": "Close! The size was a bit off.",
+  "l7.ex.feedback.bad": "Size too far from the target.",
 
   "progress.title": "My progress",
   "progress.subtitle": "Track of all your attempts.",

@@ -1,8 +1,9 @@
 import { fr } from "./fr.js";
 import { en } from "./en.js";
 import { th } from "./th.js";
+import { zh } from "./zh.js";
 
-const DICTS = { fr, en, th };
+const DICTS = { fr, en, th, zh };
 const STORAGE_KEY = "pa.lang";
 
 let currentLang = "fr";

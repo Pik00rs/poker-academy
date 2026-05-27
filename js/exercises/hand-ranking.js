@@ -150,6 +150,9 @@ function explainRanking(question, lang) {
   if (lang === "th") {
     return `ลำดับจากแข็งสุดถึงอ่อนสุด: ${order.join(" > ")}`;
   }
+  if (lang === "zh") {
+    return `从最强到最弱的顺序：${order.join(" > ")}。`;
+  }
   return `Ordre de la plus forte à la plus faible : ${order.join(" > ")}.`;
 }
 

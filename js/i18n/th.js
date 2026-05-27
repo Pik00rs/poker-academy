@@ -180,6 +180,12 @@ export const th = {
   "l6.ex.prompt": "มือของคุณคืออะไร?",
   "l7.ex.prompt": "เรียงมือจากแข็งสุดไปอ่อนสุด",
   "l10.ex.prompt": "พอท: {pot} ลง bet ของคุณ",
+  "l7.ex.pot": "พอท",
+  "l7.ex.yourBet": "เดิมพันของคุณ",
+  "l7.ex.target": "เป้าหมาย",
+  "l7.ex.feedback.good": "เยี่ยม ขนาดเหมาะสม",
+  "l7.ex.feedback.close": "ใกล้แล้ว! ขนาดต่างไปนิดหน่อย",
+  "l7.ex.feedback.bad": "ขนาดห่างจากเป้าหมายมาก",
 
   "progress.title": "ความคืบหน้าของฉัน",
   "progress.subtitle": "บันทึกการทำแบบฝึกหัดทั้งหมด",

@@ -195,6 +195,12 @@ export const fr = {
   "l6.ex.prompt": "Quelle est ta combinaison ?",
   "l7.ex.prompt": "Classe les mains de la plus forte à la plus faible.",
   "l10.ex.prompt": "Pot : {pot}. Place ta mise.",
+  "l7.ex.pot": "Pot",
+  "l7.ex.yourBet": "Ta mise",
+  "l7.ex.target": "Cible",
+  "l7.ex.feedback.good": "Bien joué, taille idéale.",
+  "l7.ex.feedback.close": "Proche ! La taille était un peu différente.",
+  "l7.ex.feedback.bad": "Taille trop éloignée de la cible.",
 
   // Progress
   "progress.title": "Ma progression",
